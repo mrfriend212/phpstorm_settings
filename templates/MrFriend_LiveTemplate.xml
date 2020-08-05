@@ -1,0 +1,280 @@
+<templateSet group="MrFriend_LiveTemplate">
+  <template name="input" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;&quot;&gt;&lt;/label&gt;&#10;    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;&quot; name=&quot;&quot;&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="select" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;&quot;&gt;&lt;/label&gt;&#10;    &lt;select class=&quot;form-control&quot; id=&quot;&quot; name=&quot;&quot;&gt;&#10;        &lt;option value=&quot;&quot;&gt;&lt;/option&gt;&#10;    &lt;/select&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="textarea" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;label for=&quot;&quot;&gt;&lt;/label&gt;&#10;    &lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot; id=&quot;&quot; name=&quot;&quot;&gt;&lt;/textarea&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="checkbox" value="&lt;div class=&quot;form-group&quot; style=&quot;&quot;&gt;&#10;    &lt;div class=&quot;md-checkbox&quot;&gt;&#10;        &lt;input type=&quot;checkbox&quot; id=&quot;&quot; name=&quot;&quot; class=&quot;md-check&quot;&gt;&#10;        &lt;label for=&quot;&quot;&gt;&#10;            &lt;span&gt;&lt;/span&gt;&#10;            &lt;span class=&quot;check&quot;&gt;&lt;/span&gt;&#10;            &lt;span class=&quot;box&quot;&gt;&lt;/span&gt;&#10;        &lt;/label&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="btnback" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;a href=&quot;{{route('')}}&quot; type=&quot;button&quot; class=&quot;form-control btn btn-outline btn-circle red-soft fs-16&quot;&gt;بازگشت&lt;/a&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="modaledit" value="&lt;!-- start modal edit --&gt;&#10;&lt;div class=&quot;modal fade bs-modal-lg in&quot; id=&quot;edit&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot;&gt;&#10;    &lt;div class=&quot;modal-dialog modal-lg&quot; role=&quot;document&quot;&gt;&#10;        &lt;div class=&quot;modal-content&quot;&gt;&#10;            &lt;div class=&quot;modal-header fn&quot;&gt;&#10;                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span&#10;                            aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;&lt;/button&gt;&#10;                &lt;div class=&quot;yekan&quot;&gt;ویرایش&lt;/div&gt;&#10;            &lt;/div&gt;&#10;            &lt;div class=&quot;modal-body&quot;&gt;&#10;                &lt;form role=&quot;form&quot; action=&quot;&quot; method=&quot;post&quot;&gt;&#10;                    @csrf&#10;                    &lt;input type=&quot;hidden&quot; id=&quot;id_e&quot; name=&quot;id_e&quot;&gt;&#10;                    &#10;                &lt;/form&gt;&#10;            &lt;/div&gt;&#10;            &lt;div class=&quot;modal-footer&quot;&gt;&#10;                &lt;button type=&quot;button&quot; class=&quot;btn btn-default yekan&quot; data-dismiss=&quot;modal&quot;&gt;انصراف&lt;/button&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;!-- end modal edit --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="tablefunc" value="&lt;!-- start table --&gt;&#10;    @php&#10;        $arr = ['ردیف','','','','',''];&#10;        table_simple($arr,&quot;عنوان جدول&quot;,&quot;tbody_id&quot;);&#10;    @endphp&#10;&lt;!-- end table --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="tab" value="&lt;div class=&quot;tabbable-custom&quot;&gt;&#10;    &lt;ul class=&quot;nav nav-tabs yekan&quot;&gt;&#10;        &lt;li class=&quot;active&quot;&gt;&#10;            &lt;a href=&quot;#tab_1&quot; data-toggle=&quot;tab&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;        &lt;li&gt;&#10;            &lt;a href=&quot;#tab_2&quot; data-toggle=&quot;tab&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;/a&gt;&#10;        &lt;/li&gt;&#10;    &lt;/ul&gt;&#10;    &lt;div class=&quot;tab-content&quot;&gt;&#10;        &lt;div class=&quot;tab-pane active &quot; id=&quot;tab_1&quot;&gt;&#10;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;tab-pane&quot; id=&quot;tab_2&quot;&gt;&#10;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="migration" value="$table-&gt;bigIncrements('id');&#10;&#10;$table-&gt;enum('status',['active','deactive'])-&gt;default('active');&#10;$table-&gt;timestamps();&#10;$table-&gt;softDeletes();&#10;$table-&gt;string('created_by')-&gt;nullable();&#10;$table-&gt;string('updated_by')-&gt;nullable();&#10;$table-&gt;string('deleted_by')-&gt;nullable();" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ajaxedit" value="/* show modal edit */&#10;$(document).on(&quot;click&quot;, &quot;.edit&quot;, function (e) {&#10;    e.preventDefault();&#10;&#10;    var id = e.currentTarget.attributes.data.nodeValue;&#10;    $.ajax({&#10;        url: &quot;{{}}&quot;,&#10;        type: &quot;get&quot;,&#10;        data: {id: id},&#10;        success: function (data) {&#10;            $('#edit').modal().show();&#10;            $('#id_e').val(data.id);&#10;        },&#10;        error: function(jqXHR, textStatus, errorThrown) {&#10;            alert('An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!');&#10;            console.log('jqXHR:');&#10;            console.log(jqXHR);&#10;            console.log('textStatus:');&#10;            console.log(textStatus);&#10;            console.log('errorThrown:');&#10;            console.log(errorThrown);&#10;        },&#10;    });&#10;});" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ajax" value="$('#submit').click(function (e) {&#10;    e.preventDefault();&#10;    $.ajaxSetup({&#10;        headers: {&#10;            'X-CSRF-TOKEN': $('meta[name=&quot;csrf_token&quot;]').attr('content')&#10;        }&#10;    });&#10;    $.ajax({&#10;        url: &quot;{{}}&quot;,&#10;        method: 'post',&#10;        data: {},&#10;        success: function (data) {&#10;            if (typeof data.errors !== 'undefined' &amp;&amp; data.errors) {&#10;                $('.alert-danger').show();&#10;                $('ul#li-container').empty();&#10;                $.each(data.errors, function (key, value) {&#10;                    $('ul#li-container').append('&lt;li&gt;' + value + '&lt;/li&gt;');&#10;                });&#10;            } else if (typeof data.success !== 'undefined' &amp;&amp; data.success) {&#10;                $('.alert-success').show();&#10;                $('div#p-container').empty();&#10;                $.each(data.success, function (key, value) {&#10;                    $('div#p-container').append('&lt;p&gt;' + value + '&lt;/p&gt;');&#10;                });&#10;            }&#10;        },&#10;        error: function(jqXHR, textStatus, errorThrown) {&#10;            alert('An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!');&#10;            console.log('jqXHR:');&#10;            console.log(jqXHR);&#10;            console.log('textStatus:');&#10;            console.log(textStatus);&#10;            console.log('errorThrown:');&#10;            console.log(errorThrown);&#10;        },&#10;    });&#10;});" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="funcs" value="//Refresh Table&#10;public function func1()&#10;{&#10;    $variables = ModelName::all();&#10;    $table = '';&#10;    $count = 1;&#10;    foreach($variables as $variable) {&#10;        $table .='&lt;tr&gt;'.&#10;            '&lt;td style=&quot;text-align: center;&quot;&gt;' . $count++ .'&lt;/td&gt;'&#10;            .'&lt;td style=&quot;text-align: center;&quot;&gt;' . $variable-&gt;FieldOfDB1 .'&lt;/td&gt;'&#10;            .'&lt;td style=&quot;text-align: center;&quot;&gt;' . $variable-&gt;FieldOfDB2 . '&lt;/td&gt;'&#10;            .'&lt;td style=&quot;text-align: center;&quot;&gt;'&#10;            .'&lt;a class=&quot;btn btn-outline btn-circle btn-sm green modaledit&quot; data=&quot; '. $variable-&gt;id.' &quot;&gt;&lt;i class=&quot;fa fa-edit &quot;&gt;&lt;/i&gt;' . &quot; ویرایش &quot; . '&lt;/a&gt;'&#10;            .'&lt;a class=&quot;btn btn-outline btn-circle btn-sm red modaldelete&quot; data=&quot; '. $variable-&gt;id .' &quot;&gt;&lt;i class=&quot;fa fa-trash-o&quot;&gt;&lt;/i&gt;' .&quot; حذف&quot; .'&lt;/a&gt;&lt;/td&gt;'&#10;            .'&lt;/tr&gt;';&#10;    }&#10;    $returnData['data'] = $table;&#10;    return $returnData;&#10;}&#10;//Create Data in DB&#10;public function func2(Request $request)&#10;{&#10;    $variable = new ModelName();&#10;    $variable-&gt;nameOfTableField1 = $request-&gt;nameOfHTMLForm1;&#10;    $variable-&gt;nameOfTableField2 = $request-&gt;nameOfHTMLForm2;&#10;    $variable-&gt;created_by = Auth::user()-&gt;id;&#10;    $variable-&gt;save();&#10;    $returnData['message'] = 'create_success';&#10;    return $returnData;&#10;}&#10;//Send Values to Blade&#10;public function func3(Request $request)&#10;{&#10;    $variable = ModelName::find($request-&gt;id);&#10;    return Response::json($variable);&#10;}&#10;//Save Changes to DB&#10;public function func4(Request $request)&#10;{&#10;    $variable = ModelName::find($request-&gt;id_e);&#10;    $variable-&gt;NameOfDBField1 = $request-&gt;NameInHTMLForm1;&#10;    $variable-&gt;NameOfDBField2 = $request-&gt;NameInHTMLForm2;&#10;    $variable-&gt;updated_by = Auth::user()-&gt;id;&#10;    $variable-&gt;save();&#10;    $returnData['message'] = 'update_success';&#10;    return $returnData;&#10;}&#10;//Delete Record in DB&#10;public function func5(Request $request)&#10;{&#10;    $variable = ModelName::find($request-&gt;id_d);&#10;    //چک کردن تمام توابع has many موجود در مدل صدا زده شده&#10;//        if(){&#10;//            $returnData['message'] = 'has_many_exist';&#10;//            return $returnData;&#10;//        }&#10;    $variable-&gt;deleted_by = Auth::user()-&gt;id;&#10;    $variable-&gt;save();&#10;    $variable-&gt;delete();&#10;    $returnData['message'] = 'delete_success';&#10;    return $returnData;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hasone" value="public function course()&#10;{&#10;    return $this-&gt;hasOne(Course::class);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hasmany" value="public function episodes()&#10;{&#10;    return $this-&gt;hasMany(Episode::class);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fk" value="$table-&gt;bigInteger('user_id')-&gt;unsigned()-&gt;index();&#10;$table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('users')-&gt;ondelete('cascade');" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="transaction" value="DB::beginTransaction();&#10;try{&#10;    //codes are here&#10;    &#10;    DB::commit();&#10;    &#10;    //return success here&#10;}catch (\Exception $e) {&#10;    DB::rollback();&#10;    &#10;    //return error here&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="modald" value="&lt;!-- start modal delete --&gt;&#10;    &lt;div class=&quot;modal fade&quot; id=&quot;deletemodal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot;&gt;&#10;        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;&#10;            &lt;div class=&quot;modal-content&quot;&gt;&#10;                &lt;div class=&quot;modal-header fn&quot;&gt;&#10;                    &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;×&lt;/span&gt;&lt;/button&gt;&#10;                    &lt;div class=&quot;yekan&quot;&gt;اخطار&lt;/div&gt;&#10;                &lt;/div&gt;&#10;                &lt;div class=&quot;modal-body&quot;&gt;&#10;                    &lt;form class=&quot;form-horizontal well&quot; id=&quot;frm_delete&quot;&gt;&#10;                        &lt;input type=&quot;hidden&quot; class=&quot;form-control &quot; id=&quot;id_d&quot; name=&quot;id_d&quot; hidden&gt;&#10;                        &lt;p class=&quot;yekan&quot;&gt;آیا از حذف این اطلاعات اطمینان دارید؟&lt;/p&gt;&#10;                    &lt;/form&gt;&#10;                &lt;/div&gt;&#10;                &lt;div class=&quot;modal-footer&quot;&gt;&#10;                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default yekan&quot; data-dismiss=&quot;modal&quot;&gt;خیر&lt;/button&gt;&#10;                    &lt;button type=&quot;button&quot; id=&quot;btn_delete&quot; class=&quot;btn btn-success yekan&quot;&gt;بله&lt;/button&gt;&#10;                &lt;/div&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;!-- end modal delete --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="middauth" value="public function __construct()&#10;{&#10;    $this-&gt;middleware('auth');&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="dd" value="dd($EXIT$)" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="EXIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mrf" value="/* mrfriend edition */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+    </context>
+  </template>
+  <template name="todop" value="// TODO $DATE$ $TIME$ MrFriend : $END$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="todoh" value="&lt;!-- TODO $DATE$ $TIME$ MrFriend : $END$ --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ablade" value="@extends('_panel.admin_panel._layouts.app')&#10;@section('css')&#10;&#10;@stop&#10;@section('content')&#10;    &lt;div class=&quot;portlet light bordered&quot;&gt;&#10;        &lt;div class=&quot;portlet-title&quot;&gt;&#10;            &lt;div class=&quot;caption font-green-soft&quot;&gt;&#10;                &lt;span class=&quot;caption-subject&quot;&gt;title&lt;/span&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        content&#10;    &lt;/div&gt;&#10;@stop&#10;@section('js')&#10;&#10;@stop" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ublade" value="@extends('_panel.user_panel._layouts.app')&#10;@section('css')&#10;&#10;@stop&#10;@section('content')&#10;    &lt;div class=&quot;portlet light bordered&quot;&gt;&#10;        &lt;div class=&quot;portlet-title&quot;&gt;&#10;            &lt;div class=&quot;caption font-green-soft&quot;&gt;&#10;                &lt;span class=&quot;caption-subject&quot;&gt;title&lt;/span&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        content&#10;    &lt;/div&gt;&#10;@stop&#10;@section('js')&#10;&#10;@stop" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="table" value="&lt;div class=&quot;portlet box green-soft&quot;&gt;&#10;    &lt;div class=&quot;portlet-title&quot;&gt;&#10;        &lt;div class=&quot;caption&quot;&gt;عنوان جدول&lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;portlet-body&quot;&gt;&#10;        &lt;div class=&quot;table-scrollable&quot;&gt;&#10;            &lt;table class=&quot;table table-striped table-bordered&quot;&gt;&#10;                &lt;thead&gt;&#10;                &lt;tr&gt;&#10;                    &lt;th class=&quot;td-center&quot;&gt;ردیف&lt;/th&gt;&#10;                    &lt;th class=&quot;td-center&quot;&gt;&lt;/th&gt;&#10;                    &lt;th class=&quot;td-center&quot;&gt;ویرایش&lt;/th&gt;&#10;                    &lt;th class=&quot;td-center&quot;&gt;حذف&lt;/th&gt;&#10;                &lt;/tr&gt;&#10;                &lt;/thead&gt;&#10;                &lt;tbody&gt;&#10;                    @foreach($vars as $var)&#10;                        &lt;tr&gt;&#10;                        &lt;td class=&quot;td-center&quot;&gt;{{(($vars-&gt;currentPage()-1)*$vars-&gt;perPage())+$loop-&gt;iteration}}&lt;/td&gt;&#10;                        &lt;td class=&quot;td-center&quot;&gt;&lt;/td&gt;&#10;                        &lt;td class=&quot;td-center&quot;&gt;&lt;a href=&quot;{{--route('',$var-&gt;id)--}}&quot; type=&quot;button&quot; class=&quot;btn btn-circle btn-sm blue-soft&quot;&gt;&lt;i class=&quot;fa fa-edit fa-2x veral&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;&#10;                        &lt;td class=&quot;td-center&quot;&gt;&lt;a href=&quot;{{--route('',$var-&gt;id)--}}&quot; type=&quot;button&quot; class=&quot;btn btn-circle btn-sm red-soft&quot;&gt;&lt;i class=&quot;fa fa-trash-o fa-2x veral&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;&#10;                    &lt;/tr&gt;&#10;                    @endforeach&#10;                &lt;/tbody&gt;&#10;            &lt;/table&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;@if(isset($f))&#10;    {{$vars-&gt;appends(['f' =&gt; $f])-&gt;links()}}&#10;@elseif(isset($q))&#10;    {{$vars-&gt;appends(['q' =&gt; $q])-&gt;links()}}&#10;@else&#10;    {{$vars-&gt;links()}}&#10;@endif" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btnselpic" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;a type=&quot;button&quot; onclick=&quot;&quot; class=&quot;form-control btn btn-outline btn-circle green-soft fs-16 mt-25&quot;&gt;انتخاب تصویر&lt;/a&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btnsubmit" value="&lt;div class=&quot;form-group&quot;&gt;&#10;    &lt;button type=&quot;submit&quot; class=&quot;form-control btn btn-circle blue-soft fs-16 mt-25&quot;&gt;&lt;/button&gt;&#10;&lt;/div&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btnedit" value="&lt;a href=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-circle btn-sm blue-soft&quot;&gt;&lt;i class=&quot;fa fa-edit fa-2x veral&quot;&gt;&lt;/i&gt;&lt;/a&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btndelete" value="&lt;a href=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-circle btn-sm red-soft&quot;&gt;&lt;i class=&quot;fa fa-trash-o fa-2x veral&quot;&gt;&lt;/i&gt;&lt;/a&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="alerte" value="&lt;!-- Start Alert Errors --&gt;&#10;@if ($errors-&gt;any())&#10;    &lt;div class=&quot;alert alert-danger&quot;&gt;&#10;        &lt;span class=&quot;closebtn&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;&amp;times;&lt;/span&gt;&#10;        &lt;ul&gt;&#10;            @foreach ($errors-&gt;all() as $error)&#10;                &lt;li&gt;{{ $error }}&lt;/li&gt;&#10;            @endforeach&#10;        &lt;/ul&gt;&#10;    &lt;/div&gt;&#10;@endif&#10;&lt;!-- End Alert Errors --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="alerts" value="&lt;!-- Start Alert Success --&gt;&#10;@if (session('status'))&#10;    &lt;div class=&quot;alert alert-success&quot;&gt;&#10;        &lt;span class=&quot;closebtn&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;&amp;times;&lt;/span&gt;&#10;        {{ session('status') }}&#10;        @if(session('action') == 'delete')&#10;            &amp;nbsp;&lt;a class=&quot;undo-delete&quot; href=&quot;{{route('web.manager.undo.delete',[session('tableName'),session('id')])}}&quot;&gt;لغو حذف&lt;/a&gt;&#10;            {{session()-&gt;forget('action')}}&#10;        @endif&#10;    &lt;/div&gt;&#10;@endif&#10;&lt;!-- End Alert Success --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btnclose" value="&lt;span class=&quot;closebtn&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;&amp;times;&lt;/span&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="validation" value="/* Validating Incoming Data */&#10;$validatedData = $request-&gt;validate([&#10;    'name' =&gt; 'required',&#10;],[&#10;    'name.required' =&gt; 'الزامی می باشد.',&#10;]);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="imagep" value="&lt;img src=&quot;&quot; id=&quot;cname_image_preview&quot; class=&quot;img-preview&quot;&gt;&#10;&lt;input type=&quot;hidden&quot; id=&quot;cname_image_name&quot; name=&quot;cname_image_name&quot;&gt;&#10;&lt;input type=&quot;hidden&quot; id=&quot;image_path&quot; name=&quot;image_path&quot;&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="belongsto" value="public function course()&#10;{&#10;    return $this-&gt;belongsTo(Course::class);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="belongstomany" value="public function episodes()&#10;{&#10;    return $this-&gt;belongsToMany(Episode::class);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="searchv" value="&lt;!-- Start Search Enviroment --&gt;&#10;&lt;form role=&quot;form&quot; action=&quot;&quot; method=&quot;get&quot;&gt;&#10;    &lt;div class=&quot;row&quot;&gt;&#10;        &lt;div class=&quot;col-md-4&quot;&gt;&#10;            &lt;div class=&quot;form-group&quot;&gt;&#10;                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;q&quot; placeholder=&quot;متن یا واژه مورد نظر را وارد کنید ...&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;col-md-2&quot;&gt;&#10;            &lt;div class=&quot;form-group&quot;&gt;&#10;                &lt;button type=&quot;submit&quot; class=&quot;form-control btn btn-circle blue-soft fs-16&quot;&gt;جستجو&lt;/button&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        @if(isset($q))&#10;            &lt;div class=&quot;col-md-6&quot;&gt;&#10;                &lt;div class=&quot;form-group&quot;&gt;&#10;                    &lt;div class=&quot;form-control&quot; style=&quot;font-size: 20px;border: none&quot;&gt;&#10;                        {{config('site.site_type')}}&#10;                        {{config('site.site_title_fa')}}&amp;nbsp;/&#10;                        &lt;span style=&quot;font-weight: bold;&quot;&gt;جستجوی&amp;nbsp;&quot;{{$q}}&quot;&lt;/span&gt;&#10;                    &lt;/div&gt;&#10;                &lt;/div&gt;&#10;            &lt;/div&gt;&#10;            &lt;br&gt;&#10;        @endif&#10;    &lt;/div&gt;&#10;&lt;/form&gt;&#10;&lt;!-- End Search Enviroment --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="validationwithurl" value="$validator = Validator::make($request-&gt;all(), [&#10;    'name' =&gt; 'required',&#10;],[&#10;    'name.required' =&gt; 'نام الزامی می باشد.',&#10;]);&#10;&#10;if ($validator-&gt;fails()) {&#10;    return Redirect::to(URL::previous() . &quot;#hashtag&quot;)&#10;        -&gt;withErrors($validator);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cblade" value="@extends('_panel.cms_panel._layouts.app')&#10;@section('css')&#10;&#10;@stop&#10;@section('content')&#10;    &lt;div class=&quot;portlet light bordered&quot;&gt;&#10;        &lt;div class=&quot;portlet-title&quot;&gt;&#10;            &lt;div class=&quot;caption font-green-soft&quot;&gt;&#10;                &lt;span class=&quot;caption-subject&quot;&gt;title&lt;/span&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        content&#10;    &lt;/div&gt;&#10;@stop&#10;@section('js')&#10;&#10;@stop" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="filterv" value="&lt;!-- Start Filter Enviroment --&gt;&#10;&lt;form role=&quot;form&quot; action=&quot;{{route('')}}&quot; method=&quot;get&quot;&gt;&#10;    &lt;div class=&quot;row&quot;&gt;&#10;        &lt;div class=&quot;col-md-4&quot;&gt;&#10;            &lt;div class=&quot;form-group&quot;&gt;&#10;                &lt;select class=&quot;form-control&quot; name=&quot;f&quot;&gt;&#10;                    &lt;option value=&quot;var1&quot;&gt;فیلتر یک&lt;/option&gt;&#10;                    &lt;option value=&quot;var2&quot;&gt;فیلتر دو&lt;/option&gt;&#10;                &lt;/select&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;col-md-2&quot;&gt;&#10;            &lt;div class=&quot;form-group&quot;&gt;&#10;                &lt;button type=&quot;submit&quot; class=&quot;form-control btn btn-circle blue-soft fs-16&quot;&gt;فیلتر&lt;/button&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/form&gt;&#10;&lt;!-- End Filter Enviroment --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="searchc" value="public function search(Request $request)&#10;{&#10;    $q = $request-&gt;q;&#10;    $items = $this-&gt;item-&gt;search($q,'title');&#10;    return view('_panel.admin_panel.product.index',compact('items','q'));&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="filterc" value="public function filter(Request $request)&#10;{&#10;    $f = $request-&gt;f;&#10;    $items = '';&#10;&#10;    if($f == 'var1') {&#10;        &#10;    } elseif ($f == 'var2') {&#10;        &#10;    }&#10;&#10;    return view('',compact('items','f'));&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="status" value="$table-&gt;enum('status',['active','deactive'])-&gt;default('active');" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="alertej" value="&lt;!-- Start Ajax Alert Errors --&gt;&#10;&lt;div class=&quot;alert alert-danger&quot; style=&quot;display:none&quot;&gt;&#10;    &lt;span class=&quot;closebtn&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;&amp;times;&lt;/span&gt;&#10;    &lt;ul id=&quot;li-container&quot;&gt;&lt;/ul&gt;&#10;&lt;/div&gt;&#10;&lt;!-- End Ajax Alert Errors --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="alertsj" value="&lt;!-- Start Ajax Alert Success --&gt;&#10;&lt;div class=&quot;alert alert-success&quot; style=&quot;display:none&quot;&gt;&#10;    &lt;span class=&quot;closebtn&quot; onclick=&quot;this.parentElement.style.display='none';&quot;&gt;&amp;times;&lt;/span&gt;&#10;    &lt;div id=&quot;p-container&quot;&gt;&lt;/div&gt;&#10;    @if(session('action') == 'delete')&#10;        &amp;nbsp;&lt;a class=&quot;undo-delete&quot; href=&quot;{{route('web.manager.undo.delete',[session('tableName'),session('id')])}}&quot;&gt;لغو حذف&lt;/a&gt;&#10;        {{session()-&gt;forget('action')}}&#10;    @endif&#10;&lt;/div&gt;&#10;&lt;!-- End Ajax Alert Success --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="retresej" value="return response()-&gt;json(['errors'=&gt;$validator-&gt;errors()-&gt;all()]);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="retressj" value="return response()-&gt;json(['success'=&gt;'message']);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btneditj" value="&lt;td class=&quot;td-center&quot;&gt;&lt;a data=&quot;{{$var-&gt;id}}&quot; type=&quot;button&quot; class=&quot;btn btn-circle btn-sm blue-soft edit&quot;&gt;&lt;i class=&quot;fa fa-edit fa-2x veral&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="btnchangestatus" value="&lt;td class=&quot;td-center&quot;&gt;&lt;a href=&quot;{{route('',$var-&gt;id)}}&quot; type=&quot;button&quot; class=&quot;btn btn-circle btn-sm &lt;?php if ($var-&gt;status == 'active') echo 'green-soft'; elseif ($var-&gt;status == 'deactive') echo 'red-soft'?&gt; changestatus&quot;&gt;&lt;i class=&quot;fa &lt;?php if ($var-&gt;status == 'active') echo 'fa-check'; elseif ($var-&gt;status == 'deactive') echo 'fa-times'?&gt; fa-2x veral&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="changestatusc" value="public function changeStatus($id)&#10;    {&#10;        $var = $this-&gt;var-&gt;find($id);&#10;        if ($var-&gt;status == 'active') {&#10;            $var-&gt;status = 'deactive';&#10;            $var-&gt;save();&#10;        } elseif ($var-&gt;status == 'deactive') {&#10;            $var-&gt;status = 'active';&#10;            $var-&gt;save();&#10;        }&#10;&#10;        return redirect()-&gt;back();&#10;    }" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
